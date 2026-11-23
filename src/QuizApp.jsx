@@ -3,7 +3,7 @@ import { quizzes } from './data/quizzes.js';
 import QuizContainer from './components/QuizContainer.jsx';
 import { useScore } from './context/ScoreContext.jsx';
 
-export default function App() {
+export default function QuizApp() {
   const [activeId, setActiveId] = useState(null);
   const { results, totalBest, resetAll } = useScore();
   const active = quizzes.find((x) => x.id === activeId);

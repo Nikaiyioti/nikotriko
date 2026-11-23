@@ -1,13 +1,14 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App.jsx';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 import { ScoreProvider } from './context/ScoreContext.jsx';
+import './styles/main.scss';
 import './styles.css';
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ScoreProvider>
       <App />
     </ScoreProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
