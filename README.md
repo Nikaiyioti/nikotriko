@@ -1,19 +1,20 @@
-# სწავლა+ — EdTech LMS: ონლაინ ტესტები და ქვიზები
+# EdTech LMS — კურსების კატალოგი (სტუდენტი 1)
 
-React + Vite პროექტი: მრავალარჩევანიანი ტესტები, Formik + Zod ვალიდაცია, useContext ქულებისთვის, useQuizTimer ჰუკი.
+React + TypeScript + Tailwind CSS + Sass
 
 ## გაშვება
 ```bash
 npm install
 npm run dev      # http://localhost:5173
-npm run build    # production build -> dist/
+npm run build    # პროდაქშენ ბილდი
 ```
 
 ## სტრუქტურა
-- `src/components/QuizContainer.jsx` — ქვიზის ლოგიკა (კითხვა, ტაიმერი, ქულები)
-- `src/components/QuestionCard.jsx` — ერთი კითხვა, Formik ფორმა, Zod ვალიდაცია
-- `src/components/ResultScreen.jsx` — შედეგები და პასუხების მიმოხილვა
-- `src/context/ScoreContext.jsx` — გლობალური ქულები (useContext + useReducer)
-- `src/hooks/useQuizTimer.js` — Custom Hook ტაიმერისთვის
-- `src/schemas/answerSchema.js` — Zod სქემა + Formik ადაპტერი
-- `src/data/quizzes.js` — ტესტების მონაცემები (აქ დაამატე ახალი ტესტები)
+- `src/types/course.ts` — `Course` interface და ფილტრების ტიპები
+- `src/hooks/useFetchCourses.ts` — Custom Hook (fetch + loading/error + AbortController)
+- `src/components/CourseCatalog.tsx` — მთავარი კომპონენტი (state, ფილტრაცია)
+- `src/components/CourseCard.tsx` — ერთი კურსის ბარათი (Props)
+- `src/components/FilterPanel.tsx` — ფილტრების პანელი
+- `src/utils/filterCourses.ts` — მრავალდონიანი ფილტრაციის ლოგიკა
+- `src/styles/` — Sass (`_variables.scss` mixin-ებით `up()`/`down()` მედია-ქვერებისთვის)
+- `public/courses.json` — კურსების მონაცემები, რომელიც fetch-ით იტვირთება
