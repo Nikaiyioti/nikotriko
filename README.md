@@ -22,9 +22,8 @@ MockAPI)
 
 1. **რეპოზიტორიის კლონირება:**
 ```bash
-git clone [https://github.com/your-username/your-repo-
-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone [https://github.com/Nikaiyioti/nikotriko.git]
+cd nikotriko
 ```
 2. **დამოკიდებულებების (Dependencies) ინსტალაცია:**
 ```bash
@@ -41,8 +40,8 @@ npm run build
 ```
 ---
 ## მნიშვნელოვანი ბმულები და მტკიცებულებები
-* **Live Demo (ონლაინ ვერსია):** [[ჩასვით Vercel / Netlify / GitHub Pages-ის ბმული](https://nikotriko.vercel.app/)]
-* **GitHub Repository:** [[ჩასვით GitHub-ის რეპოზიტორიის ბმული](https://github.com/Nikaiyioti/nikotriko.git)]
+* **Live Demo (ონლაინ ვერსია):** [(https://nikotriko.vercel.app/)]
+* **GitHub Repository:** [(https://github.com/Nikaiyioti/nikotriko.git)]
 * **ჩემი ინდივიდუალური Branch:** [mamiko]
 * **ბოლო Commit-ის ჰეში (Hash):** [b8d920706b8fb789d4c43d3c72060d725664e602]
 4. Git/GitHub სამუშაო პროცესი (Workflow) გუნდებისთვის:
