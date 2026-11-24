@@ -1,19 +1,56 @@
-# სწავლა+ — EdTech LMS: ონლაინ ტესტები და ქვიზები
+# [პროექტის დასახელება - მაგ: Cloud Infrastructure &amp; SaaS Dashboard]
+## პროექტის მიმოხილვა
+[მოკლედ აღწერეთ პროექტის მიზანი, რა პრობლემას ჭრის და რა
+ფუნქციონალს სთავაზობს მომხმარებელს.]
+---
+## გუნდის წევრები და როლების გადანაწილება
+* **გუნდის ნომერი:** [მაგ: გუნდი №3]
+* **სტუდენტი 1 (ლიდერი):** [ნიკოლოზ იმერლიშვილი] — *ლიდერილი:* [ონლაინ ტესტები და ქვიზები]
 
-React + Vite პროექტი: მრავალარჩევანიანი ტესტები, Formik + Zod ვალიდაცია, useContext ქულებისთვის, useQuizTimer ჰუკი.
+* **სტუდენტი 2:** [ნიკა ყუფუნია] — *დამხმარე:* [კურსების კატალოგი]
 
-## გაშვება
+## ტექნოლოგიური სტეკი (Tech Stack)
+* **Core:** React (Vite), TypeScript
+* **Styling:** Tailwind CSS, Sass/SCSS
+* **State Management &amp; Routing:** Redux Toolkit / Context API, React Router v6
+* **Forms &amp; Validation:** Formik, Yup / Zod
+* **Data Fetching &amp; API:** Fetch API / Axios (სატესტო მონაცემები: GitHub Raw JSON /
+MockAPI)
+* **Tools &amp; Performance:** Git, GitHub Actions, Lighthouse, Chrome DevTools
+---
+## პროექტის ლოკალურად გაშვების ინსტრუქცია
+
+1. **რეპოზიტორიის კლონირება:**
+```bash
+git clone [https://github.com/your-username/your-repo-
+name.git](https://github.com/your-username/your-repo-name.git)
+cd your-repo-name
+```
+2. **დამოკიდებულებების (Dependencies) ინსტალაცია:**
 ```bash
 npm install
-npm run dev      # http://localhost:5173
-npm run build    # production build -> dist/
 ```
+3. **პროექტის გაშვება დეველოპმენტ რეჟიმში:**
+```bash
+npm run dev
+```
+4. **პროექტის დაქოქვა პროდაქშენისთვის (Build):**
+```bash
+npm run build
 
-## სტრუქტურა
-- `src/components/QuizContainer.jsx` — ქვიზის ლოგიკა (კითხვა, ტაიმერი, ქულები)
-- `src/components/QuestionCard.jsx` — ერთი კითხვა, Formik ფორმა, Zod ვალიდაცია
-- `src/components/ResultScreen.jsx` — შედეგები და პასუხების მიმოხილვა
-- `src/context/ScoreContext.jsx` — გლობალური ქულები (useContext + useReducer)
-- `src/hooks/useQuizTimer.js` — Custom Hook ტაიმერისთვის
-- `src/schemas/answerSchema.js` — Zod სქემა + Formik ადაპტერი
-- `src/data/quizzes.js` — ტესტების მონაცემები (აქ დაამატე ახალი ტესტები)
+```
+---
+## მნიშვნელოვანი ბმულები და მტკიცებულებები
+* **Live Demo (ონლაინ ვერსია):** [[ჩასვით Vercel / Netlify / GitHub Pages-ის ბმული](https://nikotriko.vercel.app/)]
+* **GitHub Repository:** [[ჩასვით GitHub-ის რეპოზიტორიის ბმული](https://github.com/Nikaiyioti/nikotriko.git)]
+* **ჩემი ინდივიდუალური Branch:** [mamiko]
+* **ბოლო Commit-ის ჰეში (Hash):** [b8d920706b8fb789d4c43d3c72060d725664e602]
+4. Git/GitHub სამუშაო პროცესი (Workflow) გუნდებისთვის:
+o Repository-ს შექმნა: გუნდის ლიდერი ქმნის რეპოზიტორიას GitHub-ზე
+და იწვევს წევრებს.
+o შტოები (Branches): main შტოში პირდაპირი Push იკრძალება. თითოეული
+სტუდენტი მუშაობს პირად შტოზე (feature/*).
+o ინტეგრაცია (Pull Request): კოდის Push-ის შემდეგ იხსნება Pull Request
+main-ის მიმართულებით, მოწმდება კონფლიქტები და ხდება Merge.
+საბოლოო ვერსია: git pull origin main-ის შემდეგ კეთდება build (npm run
+build) და ინახება 02_integrated_project საქაღალდეში.
