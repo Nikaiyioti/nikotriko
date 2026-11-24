@@ -6,9 +6,9 @@
 * **გუნდის ნომერი:*1* [№1]
 
 
-* **სტუდენტი 1:*ნიკუშა* [ნიკუშა იმერლიშვილი] — *ლიდერი:* [ონლაინ ტესტები და ქვიზები]
+* **სტუდენტი 1:*ნიკუშა* ნიკუშა იმერლიშვილი — *ლიდერი:* ონლაინ ტესტები და ქვიზები
 
-* **სტუდენტი2 (ნიკა):** [ნიკა ყუფუნია] — *დამხმარე:* [კურსების კატალოგი]
+* **სტუდენტი2 (ნიკა):** ნიკა ყუფუნია — *დამხმარე:* კურსების კატალოგი
 
 
 ---
@@ -23,12 +23,32 @@ MockAPI)
 ---
 ## პროექტის ლოკალურად გაშვების ინსტრუქცია
 
+1. **რეპოზიტორიის კლონირება:**
+```bash
+git clone https://github.com/Nikaiyioti/nikotriko.git
+
+cd nikotriko
+```
+2. **დამოკიდებულებების (Dependencies) ინსტალაცია:**
+```bash
+npm install
+```
+3. **პროექტის გაშვება დეველოპმენტ რეჟიმში:**
+```bash
+npm run dev
+```
+4. **პროექტის დაქოქვა პროდაქშენისთვის (Build):**
+```bash
+npm run build
+
+```
+---
 
 ## მნიშვნელოვანი ბმულები და მტკიცებულებები
-* **Live Demo (ონლაინ ვერსია):** [https://nikotriko.vercel.app/]
-* **GitHub Repository:** [https://github.com/Nikaiyioti/nikotriko.git]
-* **ჩემი ინდივიდუალური Branch:** [yupu]
-* **ბოლო Commit-ის ჰეში (Hash):** [b8d740ac9551fd49bef798e853381aefeef2a650]
+* **Live Demo (ონლაინ ვერსია):** https://nikotriko.vercel.app/
+* **GitHub Repository:** https://github.com/Nikaiyioti/nikotriko.git
+* **ჩემი ინდივიდუალური Branch:** yupu
+* **ბოლო Commit-ის ჰეში (Hash):** b8d740ac9551fd49bef798e853381aefeef2a650
 4. Git/GitHub სამუშაო პროცესი (Workflow) გუნდებისთვის:
 o Repository-ს შექმნა: გუნდის ლიდერი ქმნის რეპოზიტორიას GitHub-ზე
 და იწვევს წევრებს.
@@ -38,3 +58,4 @@ o ინტეგრაცია (Pull Request): კოდის Push-ის შ
 main-ის მიმართულებით, მოწმდება კონფლიქტები და ხდება Merge.
 საბოლოო ვერსია: git pull origin main-ის შემდეგ კეთდება build (npm run
 build) და ინახება 02_integrated_project საქაღალდეში.
+
